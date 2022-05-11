@@ -1,0 +1,177 @@
+body {
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Typography */
+
+h1 {
+    font-size: 5rem;
+    color: #212614;
+    text-align: center;
+    font-family: 'Koulen', cursive;
+}
+
+.little {
+    font-size:2.5rem ;
+    display: block;
+    margin-bottom: 0;
+}
+
+.gold {
+    color: #b7832f;
+    font-size: 3rem;  
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.even {
+    width:50%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    /* margin:0 0 1.5rem 0; */
+}
+
+p {
+    margin-top: 0;
+}
+
+.banner {
+    color:#170073;
+    font-size: 2rem;
+    font-family:'ZCOOL QingKe HuangYou', cursive ;
+    
+}
+
+
+.banner-one {
+    color: #131312;
+    font-size: 2rem;
+}
+
+/*  Layout  */
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.8);
+    max-height: 80%;
+}
+
+.container {
+    width: 95%;
+    max-width: 980px;
+
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    color:black;
+}
+
+.col-1 {
+    width: 23%;
+}
+
+.col-2 {
+    width: 42%;
+}
+
+.col-3 {
+    width: 70%;    
+}
+
+.col-bg {
+    background: #212614;
+    color: #fff;
+    padding: 1em;
+    margin-bottom: 25px;
+}
+
+.images {
+    justify-content: space-around;
+    display: flex;
+    width:50%;
+    /* no object-fit */
+    /* object-fit: cover; */
+    
+    margin:0 auto;
+}
+
+.container {
+    margin:0 auto;
+}
+
+.invictus {
+    margin-top:0 ;
+}
+
+.interior, .invictus {
+    /* width:45%; */
+    max-width:100%;
+    margin:5%;
+} 
+
+/* .unwanted {
+    margin: 0;
+} */
+
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.8);
+}
+
+a:hover,
+a:focus {
+    color: #d4b44c;
+}
+
+.normal {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.green {
+    background-color:lightgreen;
+    margin-left:10%;
+}
+
+@media (max-width: 650px) {
+   /* add img */
+   
+    .columns, .images {
+        flex-direction: column;
+        object-fit: cover;
+    }
+    
+    .col-1,
+    .col-2,
+    .col-3,
+    .even,
+    .images {
+        width: 100%;
+        margin:0 auto;
+    }
+    .images {
+        height:110%;
+        justify-content: space-around;
+
+    }
+
+    .invictus {
+        margin:10%;
+    }
+}
